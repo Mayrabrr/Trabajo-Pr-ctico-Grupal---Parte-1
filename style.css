@@ -300,3 +300,43 @@ footer a {
 footer a:hover {
     color: var(--color-acento);
 }
+
+/* FLEXBOX */
+.galeria-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.galeria-flex img {
+    flex: 1 1 280;
+    max-width: 350px;
+    margin: 0;
+}
+
+/* POSICIONAMIENTO */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+/* BOOTSTRAP - PERSONALIZACIONES */
+.navbar {
+    background-color: var(--color-primario) !important;
+.navbar-brand, .navbar .nav-link {
+        color: var(--color-blanco) !important;
+    }
+.navbar .nav-link.active, .navbar .nav-link:hover {
+        color: var(--color-acento) !important;
+    }
+}
+
+.btn-primary {
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+}
+
+.card {border-color: var(--color-borde);}
+.card-title {color: var(--color-titulos);}
