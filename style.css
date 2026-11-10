@@ -22,7 +22,19 @@ html{
 
 p{
     text-align: center;
+    margin: 1rem;
+    padding: 1rem 0;
 }
+
+section{
+    padding: 2rem;
+    margin-bottom: 2rem;
+ }
+ 
+ main{
+    padding: 2rem;
+    margin: 2rem auto;
+ }
 /* BODY */
 body {
  font-family: 'Poppins', sans-serif;
