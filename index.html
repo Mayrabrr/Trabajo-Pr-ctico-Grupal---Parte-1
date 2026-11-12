@@ -10,13 +10,27 @@ de interés, propuestas culturales, actividades o eventos destacados.-->
     <title>Puerto Aurora</title>
     <link rel="icon" href="imagenes/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.google.com/specimen/Poppins">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel=stylesheet href=style.css>
 </head>
 <body>
     <header>
         <h1>Bienvenido a Puerto Aurora</h1>
         <h2 class="Eslogan"><a href="#Ciudad">"Donde termina la tierra, comienza nuestra historia."</a></h2>
-        <nav>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Puerto Aurora</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lugares.html">Lugares</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="ciudad.html">Ciudad</a></li>
@@ -25,7 +39,7 @@ de interés, propuestas culturales, actividades o eventos destacados.-->
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <article>
             <h3 class="subtitulo">Descubre la magia de Puerto Aurora</h3>
             <p class="textosSecundarios">Hay lugares que simplemente se visitan. <strong> Aurora se vive.</strong>
@@ -53,12 +67,18 @@ Porque acá entendemos que una ciudad no se construye solamente con edificios y 
 
         <aside >
             <h4>Galería</h4>  
-        
-            <section>
+            <section class="galeria-flex">
                 <img src="imagenes/galeria1.jfif" alt="El puerto de parque Aurora con la ciudad de fondo" width="300" height="200" loading="lazy" >
                 <img src="imagenes/galeria2.avif" alt="Fotografia de la ciudad con la montaña de fondo" width="300" height="200"  loading="lazy">
                 <img src="imagenes/galeria3.jpg" alt="Foto de la montaña de puerto Aurora" width="300" height="200"  loading="lazy">
             </section>
+            <div class="container mt-4">
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4"><div class="card h-100"><div class="card-body"><h5 class="card-title">Faro de Aurora</h5><p class="card-text">El mirador mas emblematico de la costa.</p><a href="lugares.html" class="btn btn-primary">Ver lugar</a></div></div></div>
+                    <div class="col-12 col-md-6 col-lg-4"><div class="card h-100"><div class="card-body"><h5 class="card-title">Puerto Histórico</h5><p class="card-text">Un lugar lleno de historia y tradición.</p><a href="lugares.html" class="btn btn-primary">Ver lugar</a></div></div></div>
+                    <div class="col-12 col-md-6 col-lg-4"><div class="card h-100"><div class="card-body"><h5 class="card-title">Parque del Sol</h5><p class="card-text">Espacios verdes para ferias y encuentros.</p><a href="lugares.html" class="btn btn-primary">Ver lugar</a></div></div></div>
+                </div>
+            </div>
         </aside>    
     </main> 
     <footer>
@@ -67,5 +87,6 @@ Porque acá entendemos que una ciudad no se construye solamente con edificios y 
             <a href="mailto:info@puertoaurora.com">Contacto</a>
             <a href="https://maps.app.goo.gl/jbhZJqEVmSJJihe57" target="_blank"  rel="noopener noreferrer">Ubicacion</a></address>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
