@@ -324,15 +324,19 @@ footer a:hover {
 
 /* BOOTSTRAP - PERSONALIZACIONES */
 .navbar {
-    background-color: var(--color-primario) !important;
-.navbar-brand, .navbar .nav-link {
-        color: var(--color-blanco) !important;
-    }
-.navbar .nav-link.active, .navbar .nav-link:hover {
-        color: var(--color-acento) !important;
-    }
+    background-color: var(--color-primario);
 }
 
+.navbar-brand,
+.navbar .nav-link {
+        color: var(--color-blanco);
+    }
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+        color: var(--color-acento);
+    }
+    
 .btn-primary {
     background-color: var(--color-primario);
     border-color: var(--color-primario);
